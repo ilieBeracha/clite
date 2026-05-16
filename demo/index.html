@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>Clite demo</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: "IBM Plex Mono", "JetBrains Mono", "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        background: #000000;
+        color: #e8ffe8;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #000000;
+      }
+
+      .shell {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 260px minmax(0, 1fr);
+      }
+
+      aside,
+      main {
+        border-right: 1px solid #2b332b;
+      }
+
+      aside {
+        padding: 18px;
+      }
+
+      main {
+        padding: 18px;
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        color: #00e676;
+        font-size: 20px;
+      }
+
+      h2 {
+        color: #00e676;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #93a393;
+        max-width: 760px;
+      }
+
+      .panel {
+        margin-top: 18px;
+        border: 1px solid #2b332b;
+      }
+
+      .panel-header,
+      .panel-body {
+        padding: 12px;
+      }
+
+      .panel-header {
+        border-bottom: 1px solid #2b332b;
+        color: #00e676;
+        font-weight: 700;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+
+      label {
+        display: grid;
+        gap: 6px;
+        color: #93a393;
+      }
+
+      input,
+      textarea,
+      button {
+        font: inherit;
+      }
+
+      input,
+      textarea {
+        background: #000000;
+        border: 1px solid #2b332b;
+        color: #e8ffe8;
+        padding: 8px;
+      }
+
+      button {
+        background: #000000;
+        border: 1px solid #00e676;
+        color: #00e676;
+        height: 34px;
+        padding: 0 12px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #00e676;
+        color: #000000;
+      }
+
+      .stack {
+        display: grid;
+        gap: 12px;
+      }
+
+      .nav {
+        display: grid;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .nav button {
+        width: 100%;
+        text-align: left;
+      }
+
+      pre {
+        margin: 0;
+        padding: 12px;
+        border: 1px solid #2b332b;
+        color: #93a393;
+        white-space: pre-wrap;
+      }
+
+      @media (max-width: 760px) {
+        .shell,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        aside {
+          border-bottom: 1px solid #2b332b;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/main.ts"></script>
+  </body>
+</html>
